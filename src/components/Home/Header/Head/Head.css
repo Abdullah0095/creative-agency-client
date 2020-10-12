@@ -1,0 +1,15 @@
+#hire-button{
+    width: 170px;
+    height: 45px;
+    background-color: rgba(12, 14, 34, 1);
+    color: white;
+    border-radius: 5px;
+}
+.col-md-4{
+    margin-left: 100px;
+}
+.col-md-6 img{
+    width: 624.6px;
+    height: 422.8px;
+}
+

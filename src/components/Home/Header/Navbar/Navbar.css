@@ -1,0 +1,23 @@
+.navbar-brand img{
+    width: 150px;
+    height: 47px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.navbar-items{
+    margin-right: 100px;
+    margin-top: 25px;
+}
+.nav-item{
+    font-weight: 500;
+    
+   
+}
+#login-button{
+    background-color: rgba(12, 14, 34, 1);
+    width: 134px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+    
+}

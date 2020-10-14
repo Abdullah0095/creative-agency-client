@@ -1,0 +1,16 @@
+.our-service img{
+        height: 74px;
+        width: 74px;
+}
+
+.our-service{
+    border: 1px solid white;
+    
+    float: left;
+}
+.service-button{
+    height: 320px;
+    width: 370px;
+    margin-left: 70px;
+    margin-top: 40px;
+}

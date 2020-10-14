@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,17 +6,33 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+
+import Order from "./components/CustomerZone/Order/Order";
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+
 import NoMatch from "./components/NoMatch/NoMatch";
 
+export const UserContext = createContext();
+
 function App() {
+
+  const [loggedInUser, setLoggedInUser] = useState({});
+
   return (
-    <div>
+    <UserContext.Provider value= {[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
           <Route path="/home">
               <Home/>
           </Route>
+          <Route path="/customer/order">
+              <Order/>
+          </Route>
+          <Route path="/login">
+              <Login/>
+          </Route>
+
           <Route exact path="/">
               <Home/>
           </Route>
@@ -25,8 +41,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
-    </div>
+      </UserContext.Provider>
+    
   );
 }
 

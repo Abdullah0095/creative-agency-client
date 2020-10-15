@@ -8,6 +8,9 @@ import {
 import './App.css';
 
 import Order from "./components/CustomerZone/Order/Order";
+import Review from "./components/CustomerZone/Review/Review";
+import Servicelist from "./components/CustomerZone/Servicelist/Servicelist";
+
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 
@@ -28,6 +31,12 @@ function App() {
           </Route>
           <Route path="/customer/order">
               <Order/>
+          </Route>
+          <Route path="/customer/serviceList">
+              <Servicelist/>
+          </Route>
+          <Route path="/customer/review">
+              <Review/>
           </Route>
           <Route path="/login">
               <Login/>

@@ -6,6 +6,9 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import AddServiceAdmin from "./components/AdminZone/AddServiceAdmin/AddServiceAdmin";
+import MakeAdmin from "./components/AdminZone/MakeAdmin/MakeAdmin";
+import ServiceListAdmin from "./components/AdminZone/ServiceListAdmin/ServiceListAdmin";
 
 import Order from "./components/CustomerZone/Order/Order";
 import Review from "./components/CustomerZone/Review/Review";
@@ -37,6 +40,15 @@ function App() {
           </Route>
           <Route path="/customer/review">
               <Review/>
+          </Route>
+          <Route path="/admin/serviceList">
+              <ServiceListAdmin/>
+          </Route>
+          <Route path="/admin/addService">
+              <AddServiceAdmin/>
+          </Route>
+          <Route path="/admin/makeAdmin">
+              <MakeAdmin/>
           </Route>
           <Route path="/login">
               <Login/>

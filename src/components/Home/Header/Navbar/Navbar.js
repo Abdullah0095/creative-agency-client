@@ -24,6 +24,9 @@ const Navbar = () => {
                         <a class="nav-link text-black mr-4" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
+                        <Link style={{textDecoration: 'none'}} to="/admin/serviceList"><button id="login-button" class="nav-link mr-5">Admin</button></Link>
+                    </li>
+                    <li class="nav-item">
                         <Link style={{textDecoration: 'none'}} to="/customer/order"><button id="login-button" class="nav-link mr-5">Login</button></Link>
                     </li>
                 </ul>

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 import logo from '../../../images/logos/logo.png';
 
+
 const Sidebar = () => {
+    
     return (
         <section >
 
@@ -13,7 +15,7 @@ const Sidebar = () => {
             </div>
 
             <div style={{marginTop: '60px', marginLeft: '70px'}}>
-                <Link to="/customer/order" style={{textDecoration:'none', color: 'black'}}>
+                <Link to="/"style={{textDecoration:'none', color: 'black'}}>
                     <h5>Order</h5><br/>
                 </Link>
 

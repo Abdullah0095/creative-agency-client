@@ -1,7 +1,19 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import serviceItems from '../../Home/Service/ServiceData/ServiceData';
 import Sidebar from '../Sidebar/Sidebar';
 
+
 const Order = () => {
+
+
+    const {id} = useParams();
+    const serviceDetails = serviceItems.filter(data => data.id == id);
+    // console.log(serviceDetails);
+    const {name} = serviceDetails[0];
+    const {description} = serviceDetails[0];
+
+
     return (
         <div style={{height: '600px', width: '1380px'}} className="row">
 
@@ -34,12 +46,12 @@ const Order = () => {
 
                         <div class="form-group">
 
-                            <input type="name" class="form-control" placeholder=" " />
+                            <input type="name" class="form-control" value={name} placeholder=" " />
 
                         </div>
 
                         <div className="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="description" rows="3"></textarea>
+                        <textarea class="form-control" value={description} id="exampleFormControlTextarea1" placeholder="description" rows="3"></textarea>
                         </div>
 
                         <div class="form-group">

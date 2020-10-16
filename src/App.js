@@ -32,7 +32,7 @@ function App() {
           <Route path="/home">
               <Home/>
           </Route>
-          <Route path="/customer/order">
+          <Route path="/customer/order/:id">
               <Order/>
           </Route>
           <Route path="/customer/serviceList">
